@@ -1,1 +1,56 @@
+<!DOCTYPE html>
 
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='Log.css') }}">
+  <title>Letsglow Login</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <form onsubmit="redirectToHome(event)">
+      <h1>Login Letsglow</h1>
+
+      <div class="input-box">
+        <input placeholder="Usuário" type="email" required>
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="input-box">
+        <input placeholder="Senha" type="password" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox">
+          Lembrar minha senha
+        </label>
+        <a href='EsqueciSenha.html'>Esqueci a senha</a>
+      </div>
+
+      <button type="submit" class="login">Login</button>
+
+      <div class="register-link">
+        <p>Não tem uma conta? <a href='Cadastro.html'>Cadastre-se</a></p>
+      </div>
+    </form>
+
+
+  </main>
+
+  <script>
+  function redirectToHome(event) {
+    event.preventDefault(); // Evita o envio do formulário
+    window.location.href = "Letsglow página principal.html"; // Redireciona para a página principal
+  }
+  </script>
+
+</body>
+
+</html>
