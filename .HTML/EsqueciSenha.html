@@ -1,1 +1,18 @@
-
+<!-- salvar como reset-password.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Redefinir Senha</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='Esq.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Redefinir Senha</h2>
+    <form action="esq.php" method="POST">
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <button type="submit" href='EsqueciSenha.html'>Enviar Link</button>
+    </form>
+  </div>
+</body>
+</html>
